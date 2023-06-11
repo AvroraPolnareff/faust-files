@@ -1,6 +1,6 @@
 import("stdfaust.lib");
 
-voltage = hslider("VOLTAGE[OWL:A]", -1, -1, 1, 0.001);
-led_out  = hbargraph("LED>[OWL:AA]", -1, 1);
+voltage = hslider("VOLTAGE[OWL:A]", -1, -3, 3, 0.001);
+led_out  = hbargraph("LED>[OWL:AA]", -3, 3);
 
 process = attach(voltage : led_out);
